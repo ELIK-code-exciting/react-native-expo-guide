@@ -56,10 +56,16 @@ npm start
 Пропишем следующее:
 
 ```JavaScript
-import {Text} from 'react-native';
 import {View} from 'react-native';
+import {Text} from 'react-native';
 import {Stylesheet} from 'react-native';
 import {Statusbar} from 'expo-status-bar';
 ```
+
+Пояснение:
+- `{View}` - контейнер (аналог `<div>` в вебе). Используется для группировки и позиционирования.
+- `{Text}` - единственный способ отображать текст в React Native. Всё текстовое содержимое должно быть внутри `<Text>`, а сам `<Text>` внутри `{View}`.
+- `{Stylesheet}` - для создания стилей и управления стильных объектов.
+- `{Statusbar}` - компонент из Expo, управляющий панелью состояния (время, батарея, сигнал).
 
 
