@@ -96,7 +96,16 @@ const styles  = StyleSheet.create({
 - `expo default` - делает файл доступным как основной компонент экрана (Expo и React Navigation ищут именно `default export`).
 - `return()` - React получит JSX, превратит его в нативные элементы (на iOS/Android) и покажет пользователю.
 - `<View style = {styles.container}>` - корневой контейнер, благодаря styles растягивается на весь экран.
-  - вауаа
+  - Разберём код с описанием стиля:
+  - ```JavaScript
+    const styles  = StyleSheet.create({
+      container: {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center'
+      },
+    })
+    ```
 - ``
 - ``
 - ``
