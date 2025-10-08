@@ -104,7 +104,7 @@ options={{
 
 **Расширим панель:**
 
-> не забудь импортировать остальные экраны!
+> Не забудь импортировать остальные экраны!
 
 ```JavaScript
 export default function TabsLayout() {
@@ -202,10 +202,16 @@ export default function TabsLayout() {
 
 Пояснение:
 
-- `headerShown` - отменяет показ 
-- ``
-- ``
-- ``
+- `headerShown` - скрывает стандартный заголовок (шапку) над каждым экраном.
+- `tabBarActiveTintColor` - задаёт цвет активной вкладки (иконки и текста под ней).
+- `tabBarInactiveTintColor` - задаёт цвет неактивных вкладок.
+- `tabBarStyle` - стили самой панели.
+    - `height` - высота нижней панели.
+    - `borderTopLeftRadius` и `borderTopRightRadius` - закругляют верхние углы панели.
+    - `backgroundColor: '#ffffff'` - фон панели (белый).
+    - `position: 'absolute'` - делает панель абсолютно позиционированной.
+    - `bottom: 0`, `left: 0`, `right: 0` - прижимают панель к нижнему краю и растягивают на всю ширину экрана (Только с position: 'absolute').
+    - `borderTopWidth: 0` - убирает тонкую линию, которую React Navigation иногда рисует сверху панели.
 - ``
 - ``
 - ``
