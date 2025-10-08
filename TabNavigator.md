@@ -169,3 +169,46 @@ export default function TabsLayout() {
 
 **Важно сопоставить правильный `name` и `component`!**
 
+✅ Теперь у нас есть готовая навигационная панель.
+
+Немного похимичим и сделаем красивее, для этого добавим в `<Tab.Navigator>`:
+
+```JavaScript
+<Tab.Navigator
+    screenOptions={{
+        headerShown: false,
+        tabBarActiveTintColor: '#1a73e8',
+        tabBarInactiveTintColor: '#888',
+        tabBarStyle: {
+            height: 50,
+            borderTopLeftRadius: 20,   
+            borderTopRightRadius: 20,  
+            backgroundColor: '#ffffff', 
+            position: 'absolute',       
+            bottom: 0,
+            left: 0,
+            right: 0,
+            borderTopWidth: 0,
+        },
+        tabBarLabelStyle: {
+            fontSize: 11,
+            marginBottom: 4,
+        },
+    }}
+>
+```
+
+Я от себя добавил закруглённость верхней грани панели.
+
+Пояснение:
+
+- `headerShown` - отменяет показ 
+- ``
+- ``
+- ``
+- ``
+- ``
+- ``
+- ``
+- ``
+- ``
