@@ -102,8 +102,70 @@ options={{
 Они в себе будут располагать расписание, теорию, чат и профиль соответственно.
 Загрузим в них тот же код, что и в `main.js`, только поменяем название функций `expo default` и текст в центре экрана.
 
-**Расширим панель:** >не забудь импортировать остальные экраны!
+**Расширим панель:**
+
+> не забудь импортировать остальные экраны!
 
 ```JavaScript
+export default function TabsLayout() {
+    return (
+        <Tab.Navigator>
+            <Tab.Screen
+                name='main'
+                component={HomeScreen}
+                options={{
+                    title: "Главная",
+                    tabBarIcon: () => (
+                        <Text style={{ fontSize: 20 }}>🏠</Text>
+                    ),
+                }}
+            />
+            <Tab.Screen
+                name="schedule"
+                component={ScheduleScreen}
+                options={{
+                    title: "Расписание",
+                    tabBarIcon: () => (
+                        <Text style={{ fontSize: 20 }}>📅</Text>
+                    ),
+                }}
+            />
+            <Tab.Screen
+                name="theory"
+                component={TheoryScreen}
+                options={{
+                    title: "Теория",
+                    tabBarIcon: () => (
+                        <Text style={{ fontSize: 20 }}>📚</Text>
+                    ),
+                }}
+            />
+            <Tab.Screen
+                name="chat"
+                component={ChatScreen}
+                options={{
+                    title: "Чаты",
+                    tabBarIcon: () => (
+                        <Text style={{ fontSize: 20 }}>💬</Text>
+                    ),
+                }}
+            />
+            <Tab.Screen
+                name="profile"
+                component={ProfileScreen}
+                options={{
+                    title: "Профиль",
+                    tabBarIcon: () => (
+                        <Text style={{ fontSize: 20 }}>👤</Text>
+                    ),
+                }}
+            />
 
+
+        </Tab.Navigator>
+    );
+}
 ```
+
+**Важно сопоставить правильный `name` и `component`!**
+
