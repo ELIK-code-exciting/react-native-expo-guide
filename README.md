@@ -13,7 +13,7 @@ npx create-expo-app DrivingSchoolApp
 ```bash
 cd DrivingSchoolApp
 ```
-## Эта команды:
+## Эти команды:
   - Создают папку проекта
   - Устанавливают зависимости
   - Генерируют базовую структуру
