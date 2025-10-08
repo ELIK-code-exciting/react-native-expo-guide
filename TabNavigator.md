@@ -18,3 +18,4 @@ npx expo install @react-navigation/bottom-tabs
 npx expo install react-native-screens react-native-safe-area-context
 ```
 
+> 💡 Эти команды добавят всё необходимое для работы навигации.
