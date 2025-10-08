@@ -53,3 +53,13 @@ npm start
 
 Для начала импортируем из `react-native` нужные компоненты для вывода информации на странице.
 
+Пропишем следующее:
+
+```JavaScript
+import {Text} from 'react-native';
+import {View} from 'react-native';
+import {Stylesheet} from 'react-native';
+import {Statusbar} from 'expo-status-bar';
+```
+
+
