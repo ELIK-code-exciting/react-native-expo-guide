@@ -36,7 +36,7 @@ npm start
 3) Вставьте в `.js` файл следующее:
 
    ```JavaScript
-   export default function Test(){
+   export default function Test(){ // Название - Test может быть любым!
    
    }
    ```
