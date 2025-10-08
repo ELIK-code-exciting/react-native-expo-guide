@@ -68,4 +68,28 @@ import {Statusbar} from 'expo-status-bar';
 - `{Stylesheet}` - для создания стилей и управления стильных объектов.
 - `{Statusbar}` - компонент из Expo, управляющий панелью состояния (время, батарея, сигнал).
 
+### Следуя грамматике, пропишем:
+
+```JavaScript
+export default function main(){
+  return(
+    <View style = {styles.container}>
+    <Text>
+      Главная
+    </Text>
+  </View>
+  );
+}
+
+const styles  = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+})
+```
+
+Наш код соблюдает правила постановки элементов и выводит в центр экрана надпись `Главная`.
+### Подробное пояснение строчек:
 
