@@ -180,7 +180,6 @@ export default function TabsLayout() {
         tabBarActiveTintColor: '#1a73e8',
         tabBarInactiveTintColor: '#888',
         tabBarStyle: {
-            height: 50,
             borderTopLeftRadius: 20,   
             borderTopRightRadius: 20,  
             backgroundColor: '#ffffff', 
@@ -206,7 +205,6 @@ export default function TabsLayout() {
 - `tabBarActiveTintColor` - задаёт цвет активной вкладки (иконки и текста под ней).
 - `tabBarInactiveTintColor` - задаёт цвет неактивных вкладок.
 - `tabBarStyle` - стили самой панели.
-    - `height` - высота нижней панели.
     - `borderTopLeftRadius` и `borderTopRightRadius` - закругляют верхние углы панели.
     - `backgroundColor: '#ffffff'` - фон панели (белый).
     - `position: 'absolute'` - делает панель абсолютно позиционированной.
